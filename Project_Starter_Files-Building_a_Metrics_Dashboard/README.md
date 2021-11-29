@@ -134,7 +134,7 @@ We want to create an SLO guaranteeing that our application has a 99.95% uptime p
 * Error rate
 * Uptime
 * Latency
-
+* cpu usage
 ## Building KPIs for our plan
 Now that we have our SLIs and SLOs, create KPIs to accurately measure these metrics. We will make a dashboard for this, but first write them down here.
 
@@ -144,6 +144,8 @@ Now that we have our SLIs and SLOs, create KPIs to accurately measure these metr
 
 3- Latency: It can be measured using- frontend http service for 4xx and 5xx, backend http service 4xx and 5xx, number of successful/failure requests per second etc.
 
+4- misc monitoring such as disk usage, cpu/mem usage that indirectly affect client service.
+                cpu usage , memory usage , i/o usage
 ## Final Dashboard
 Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.
 * [final dashboard](answer-img/final_dashboard.png)
@@ -155,3 +157,5 @@ Dashboard contains below graphs:
 - Graphs showing memory/cpu/io usage
 - Graphs showing network traffic
 - Graphs showing frontend http service for 4xx and 5xx, backend http service 4xx and 5xx
+
+I have added description into the graph, please see [my dashboard](<reference-dashboards/my dashboard-1636970325925.json>) 
